@@ -19,7 +19,7 @@ allprojects {
 - 依赖sdk的module, build.gralde文件添加依赖如下
 
 ```
-implementation 'com.github.linktodappx:CocosbcxInvokerAndroid:1.0.0'
+implementation 'com.github.linktodappx:DappxInvokerAndroid:1.0.0'
 ```
 
 ### 使用

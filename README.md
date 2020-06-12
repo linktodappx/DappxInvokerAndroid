@@ -19,7 +19,7 @@ allprojects {
 - module relys on sdk, build.gralde file adds dependencies as follows
 
 ```
-implementation 'com.github.linktodappx:CocosbcxInvokerAndroid:1.0.0'
+implementation 'com.github.linktodappx:DappxInvokerAndroid:1.0.0'
 ```
 
 ### Instructions
