@@ -5,8 +5,6 @@
 
 ### Start access
 
-#### Local maven warehouse access
-
 - Add mavenUrl to the project root build.gradle file
 
 ```
@@ -25,8 +23,6 @@ implementation 'com.github.linktodappx:CocosbcxInvokerAndroid:1.0.0'
 ```
 
 ### Instructions
-
-### APIs
 
 #### 1.Login Authorize (Authorize)
 

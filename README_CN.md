@@ -5,8 +5,6 @@
 
 ### 开始接入
 
-#### 本地maven仓库方式接入
-
 - 项目根目录build.gradle文件添加 mavenUrl
 
 ```
@@ -25,8 +23,6 @@ implementation 'com.github.linktodappx:CocosbcxInvokerAndroid:1.0.0'
 ```
 
 ### 使用
-
-### APIs
 
 #### 1.授权登录 (Authorize)
 
