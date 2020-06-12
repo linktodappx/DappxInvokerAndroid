@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.linkto.invoker">
+
+    <application
+        android:supportsRtl="true"
+        android:exported="true">
+
+        <activity
+            android:name=".dapp_client.CocosAssistActivity"
+            android:exported="true" />
+    </application>
+</manifest>
