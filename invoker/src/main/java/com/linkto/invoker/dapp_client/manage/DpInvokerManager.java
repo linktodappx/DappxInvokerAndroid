@@ -112,6 +112,11 @@ public class DpInvokerManager {
 	 * 拉起CocosWallet
 	 */
 	private void invokeCocosWallet(Context context, String action, String param) {
+		if (!AppHelper.isAppInstall(Constant.DAPPX_PACKAGE_NAME)) {
+			AppHelper.openBrowser(context, Constant.DAPPX_DOWNLOAD_URL);
+			return;
+		}
+
 		Intent intent = new Intent();
 		//传递包名、类名、app名
 		intent.putExtra("packageName", context.getPackageName());

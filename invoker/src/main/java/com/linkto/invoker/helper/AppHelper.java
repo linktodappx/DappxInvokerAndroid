@@ -27,14 +27,25 @@ public class AppHelper {
 	/**
 	 * 检查CocosWallet钱包是否已安装
 	 */
-	public boolean isCocosWalletInstall(Context context) {
+	public static boolean isAppInstall(Context context, String packageName) {
 		try {
-			context.getPackageManager().getApplicationInfo(Constant.DAPPX_PACKAGE_NAME,
-					PackageManager.GET_UNINSTALLED_PACKAGES);
-			return true;
-		} catch (PackageManager.NameNotFoundException e) {
+			PackageManager packageManager = context.getPackageManager();
+			PackageInfo packageInfo = packageManager.getPackageInfo(packageName, 0);
+			return packageInfo != null;
+		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
+		}
+	}
+
+	public static void openBrowser(Context context, String url) {
+		try {
+			Intent intent = new Intent(Intent.ACTION_VIEW);
+			intent.addCategory(Intent.CATEGORY_BROWSABLE);
+			intent.setData(Uri.parse(url));
+			context.startActivity(intent);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 
