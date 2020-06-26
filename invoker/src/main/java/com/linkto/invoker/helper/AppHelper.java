@@ -1,8 +1,10 @@
 package com.linkto.invoker.helper;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.util.Base64;
 
 import com.linkto.invoker.constant.Constant;

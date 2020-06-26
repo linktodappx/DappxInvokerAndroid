@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
+import com.linkto.invoker.constant.Constant;
 import com.linkto.invoker.dapp_client.CocosAssistActivity;
 import com.linkto.invoker.dapp_client.listener.CocosListener;
 import com.linkto.invoker.dapp_client.model.Authorize;
